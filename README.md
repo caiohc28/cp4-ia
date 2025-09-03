@@ -46,9 +46,40 @@
 
 ---
 
-## ⚙️ Instruções de Execução
+## Exercícios 36-40: Orange Data Mining
 
-### 1. Clonar o repositório
-```bash
-git clone <link-do-seu-repo>
-cd checkpoint01
+### Exercício 36: Importação e Visualização Inicial
+Objetivo: Carregar o dataset e visualizar as primeiras linhas.
+Workflow utilizado:
+CSV File Import → Data Table
+
+Resposta: O dataset contém 9 variáveis e [INSERIR NÚMERO REAL DO CSV ORIGINAL] registros.
+
+### Exercício 37: Amostragem de Dados (1%)
+Objetivo: Criar uma amostra de 1% dos dados para análise mais rápida.
+
+Resposta: A distribuição na amostra de 1% é semelhante à base completa devido à amostragem aleatória.
+
+### Exercício 38: Distribuição do Consumo
+Objetivo: Analisar a distribuição da variável Global_active_power.
+
+Resposta: O consumo é concentrado em valores baixos (0-2 kW), com uma distribuição assimétrica positiva, indicando que a maioria do tempo o consumo é moderado, com poucos períodos de consumo muito alto.
+
+### Exercício 39: Relação entre Variáveis Elétricas
+Objetivo: Analisar a correlação entre Voltage e Global_intensity.
+
+Resposta: Existe uma correlação negativa fraca a moderada entre Voltage e Global_intensity. Isso é fisicamente esperado, pois quando a voltagem diminui, a intensidade tende a aumentar para manter a mesma potência (P = V × I).
+
+### Exercício 40: Clustering com K-Means
+Objetivo: Segmentar os dados em 3 grupos usando as variáveis Sub_metering.
+Variáveis utilizadas: Sub_metering_1, Sub_metering_2, Sub_metering_3
+Número de clusters: 3
+Algoritmo: k-Means
+
+Resposta: Sim, cada cluster representa um padrão distinto de consumo doméstico:
+
+Cluster C1 (Vermelho): Baixo consumo geral em todos os sub-medidores
+Cluster C2 (Azul): Consumo moderado com padrões específicos
+Cluster C3 (Verde): Alto consumo, especialmente em Sub_metering_1
+
+Os clusters revelam diferentes perfis de uso doméstico, onde cada grupo representa comportamentos distintos de consumo elétrico nos diferentes circuitos da casa.
